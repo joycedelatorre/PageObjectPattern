@@ -7,5 +7,5 @@
 var homePage = require('./home');
 
 homePage.navigateToGoogle();
-homePage.searchEntry();
-homePage.buttonClick();
+var searchResult = homePage.searchEntry();
+searchResult.clickLinkWebsite();

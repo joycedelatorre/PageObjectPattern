@@ -1,19 +1,16 @@
 var webdriver = require('selenium-webdriver'),
 	By = webdriver.By;
 var BasePage = require('./base');
-var driver;
+
 
 class HomePage extends BasePage{
 
-	//searchEntry() function to enter in the text box what you're searching for
+	//searchEntry() it is a function that will get the user is searching for and will return a new page.
 	searchEntry(){
-		this.driver.findElement(By.name('q')).sendKeys('little mamas filipino food austin');
+			driver.findElement(By.name('q')).sendKeys('little mamas filipino food austin');
+			driver.findElement(By.name('btnK')).click();
+			return require('./searchResult');
 	}
-
-	buttonClick(){
-		this.driver.findElement(By.name('btnK')).click();
-	}
-
 }
 
 module.exports = new HomePage();

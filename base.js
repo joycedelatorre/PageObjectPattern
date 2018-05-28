@@ -3,17 +3,19 @@
 //And it gives us some mechanincs of being able to share the instance of a driver
 
 var webdriver = require('selenium-webdriver');
+var driver = new webdriver.Builder()
+			.forBrowser('firefox')
+			.build();
 
 class BasePage{
 
 	constructor(){
-		this.driver = new webdriver.Builder()
-			.forBrowser('firefox')
-			.build();
+		global.driver = driver; 
+		//once its initialized this driver becomes shareable and will not build multiple instances of a browser
 	}
 
 	navigateToGoogle(){
-		this.driver.get('https://www.google.com/');
+		driver.get('https://www.google.com/');
 	}
 
 }
