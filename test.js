@@ -5,6 +5,7 @@
 // driver.get('https://www.google.com/');
 
 var homePage = require('./home');
+
 homePage.navigateToGoogle();
 homePage.searchEntry();
 homePage.buttonClick();
