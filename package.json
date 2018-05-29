@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/joycedelatorre/PageObjectPattern#readme",
   "dependencies": {
+    "file-system": "^2.2.2",
+    "request": "^2.87.0",
     "selenium-webdriver": "^4.0.0-alpha.1"
   }
 }

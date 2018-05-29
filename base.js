@@ -1,4 +1,4 @@
-//this simply contains common functionality across all pages.
+//This simply contains common functionality across all pages.
 //And it gives us some mechanincs of being able to share the instance of a driver
 
 var webdriver = require('selenium-webdriver');

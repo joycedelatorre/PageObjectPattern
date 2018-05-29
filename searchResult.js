@@ -14,6 +14,7 @@ class SearchResult extends BasePage{
 				about.phone();
 				about.address();
 				about.hours();
+				about.image();
 			});
 		});
 	}
