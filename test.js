@@ -8,4 +8,12 @@ var homePage = require('./home');
 
 homePage.navigateToGoogle();
 var searchResult = homePage.searchEntry();
-searchResult.clickLinkWebsite();
+searchResult.clickLinkWebsite()
+
+
+
+
+
+
+
+

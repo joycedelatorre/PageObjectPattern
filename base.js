@@ -1,4 +1,3 @@
-//REF:https://www.youtube.com/watch?v=D7gY-9OKkqI
 //this simply contains common functionality across all pages.
 //And it gives us some mechanincs of being able to share the instance of a driver
 
@@ -20,3 +19,6 @@ class BasePage{
 
 }
 module.exports= BasePage;
+
+
+//REF:https://www.youtube.com/watch?v=D7gY-9OKkqI
